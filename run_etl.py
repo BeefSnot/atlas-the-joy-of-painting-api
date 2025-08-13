@@ -8,7 +8,6 @@ import sys
 import os
 import logging
 
-# Add src directory to path
 sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
 
 from src.etl.load import main as run_etl
@@ -20,7 +19,6 @@ if __name__ == "__main__":
     print("transform it for consistency, and load it into MongoDB.")
     print("")
     
-    # Check if data files exist
     from config import Config
     
     files_to_check = [
@@ -45,5 +43,4 @@ if __name__ == "__main__":
     print("✅ All required data files found")
     print("")
     
-    # Run ETL
     run_etl()
