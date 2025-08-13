@@ -78,35 +78,6 @@ curl "http://localhost:5000/episodes/filter?colors=Prussian Blue,Titanium White&
 curl "http://localhost:5000/episodes/filter?month=january&subjects=mountain&colors=prussian_blue&match=all"
 ```
 
-## Project Structure
-
-```
-atlas-the-joy-of-painting-api/
-├── src/
-│   ├── database/
-│   │   ├── connection.py
-│   │   └── models.py
-│   ├── etl/
-│   │   ├── extract.py
-│   │   ├── transform.py
-│   │   └── load.py
-│   └── api/
-│       ├── app.py
-│       ├── routes.py
-│       └── filters.py
-├── data/
-│   ├── raw/                 # Original data files
-│   └── processed/           # Cleaned data
-├── tests/
-│   ├── test_etl.py
-│   └── test_api.py
-├── config.py
-├── requirements.txt
-├── run_etl.py
-├── app.py
-└── README.md
-```
-
 ## Data Sources
 
 - **Episode Dates**: Episode titles with air dates
@@ -125,7 +96,4 @@ Use Postman or curl to test the API endpoints. The API returns JSON responses wi
 - Associated colors and subjects
 - YouTube links and painting images
 
-## License
-
-Educational project for Atlas curriculum.
 
